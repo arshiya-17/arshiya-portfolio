@@ -1,0 +1,90 @@
+/* Body & Background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #0f172a, #1e3a8a, #06b6d4);
+  z-index: -1;
+  animation: moveBG 20s linear infinite;
+}
+
+@keyframes moveBG {
+  0% {background-position:0 0;}
+  100% {background-position:1000px 0;}
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 50px;
+}
+.profile {
+  width: 120px;
+  border-radius: 50%;
+}
+
+/* Navbar */
+nav {
+  text-align: center;
+  padding: 10px 0;
+}
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+nav a:hover {
+  background: #06b6d4;
+  box-shadow: 0 0 10px #06b6d4;
+}
+
+/* Glass Cards */
+.glass {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+.glass:hover {
+  box-shadow: 0 0 20px #06b6d4;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+.item {
+  text-align: center;
+  transition: 0.3s;
+}
+.item img {
+  width: 100%;
+  border-radius: 10px;
+}
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #06b6d4;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #020617;
+}
+a {color:#06b6d4; text-decoration:none;}
+a:hover{text-decoration:underline;}
